@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Aqui he tenido que cambiar esta configuración debido a que no se podia debbuggear -->
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta http-equiv="Content-Security-Policy" content="default-src gap://ready file://* *; style-src 'self' http://* https://* 'unsafe-inline'; script-src 'self' http://* https://* 'unsafe-inline' 'unsafe-eval'">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Tiago Localización</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>Tiago la Pizza SL</h1>
+            <div id="ok" class="blink">
+                <p class="event listening">Contectando con el dispositivo</
+                    p>
+                <p class="event received">Dispositivo listo! Gabriel :)</p>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <!-- <script type="text/javascript" src="js/index.js"></script> -->
+        <!-- <script type="text/javascript" src="js/tiago.js"></script> -->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bglocation.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            // tiago.initialize();
+        </script>
+    </body>
+</html>
